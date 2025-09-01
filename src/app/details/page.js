@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from "react";
 import SectionOne from "./SectionOne";
 import SectionThree from "./SectionThree";
