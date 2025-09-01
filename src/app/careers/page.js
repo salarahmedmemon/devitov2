@@ -2,6 +2,8 @@
 import { useState, useRef, useEffect } from "react";
 import SectionOne from "./SectionOne";
 import SectionTwo from "./SectionTwo";
+import SectionThree from "./SectionThree";
+import SectionFour from "./SectionFour";
 
 
 export default function CareersPage() {
@@ -36,6 +38,8 @@ export default function CareersPage() {
                 <>
                     <SectionOne />
                     <SectionTwo />
+                    <SectionThree />
+                    <SectionFour />
                 </>
             )
         }
