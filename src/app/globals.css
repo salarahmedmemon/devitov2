@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Header Styling */
+@keyframes rotateOnce {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-once:hover {
+  animation: rotateOnce 0.6s ease-in-out;
+}
+
+.active {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/* section-one Styling */
+
+@keyframes upDownColumns {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(-30px); }
+    50%  { transform: translateY(0); }
+    75%  { transform: translateY(30px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes downUpColumns {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(30px); }
+    50%  { transform: translateY(0); }
+    75%  { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+.first-column img, .third-column img{
+    animation: upDownColumns 3s ease-in-out infinite;
+}
+
+.second-column img {
+    animation: downUpColumns 3s ease-in-out infinite;
+}
+
+.images:hover img{
+    animation-play-state: paused !important;
+}
+
+
+
+/* Section Two Styling */
+
+
+/* Section Three Styling */
+.section-three {
+    background-image: url("../../public/img/SectionThree/backImage.png");
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: center;
+}
+
+/* Section Four Styling */
+.animate-slide div {
+  box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.187), 
+              -2px 0px 6px rgba(0, 0, 0, 0.187), 
+               2px 0px 6px rgba(0, 0, 0, 0.187);
+}
+
+
+.animate-slide {
+  animation: slide 6s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }        /* initial */
+  20%  { transform: translateX(-10%); }     /* step 1 */
+  40%  { transform: translateX(-20%); }     /* step 2 */
+  60%  { transform: translateX(-30%); }     /* step 3 */     /* go back halfway */
+  100% { transform: translateX(0); }        /* return to start */
+}
+
+
+/* Section Five Styling */
+.gradient-border {
+    background: linear-gradient(90deg, #FA1AC2, #1AE4FA, #1CDE63D9);
+    /* background-size: 400% 400%; */
+    /* animation: borderMove 7s linear infinite; */
+}
+
+.blur-circle {
+  box-shadow: 100px 100px 100px 45px #ad1b88;
+  transition: .4s ease;
+  animation: scaleAnimation 5s linear infinite;
+}
+
+@keyframes scaleAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes borderMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Section Six Styling */
+.section-six {
+    background-image: url("../../public/img/SectionSixImages/bgImage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    /* background-position: center -6vw; */
+}
+
+
+/* w-[50%] h-[80%] bg-red-600 absolute bottom-0 right-0 rounded-tl-full rounded-tr-3xl */
+
+.overlay {
+    width: 0%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.855);
+    position: absolute;
+    bottom: 0;
+    right:0;
+    border-top-left-radius: 100%;
+    transition: width 420ms cubic-bezier(.22,.9,.32,1),
+              height 420ms cubic-bezier(.22,.9,.32,1),
+              opacity 280ms ease;
+    pointer-events: none; 
+}
+
+.project-one:hover .overlay {
+  width: 90%;   /* cover right half */
+  height: 70%; /* full height */
+  opacity: 1;
+}
+.project-two:hover .overlay {
+  width: 60%;   /* cover right half */
+  height: 100%; /* full height */
+  opacity: 1;
+}
+.project-three:hover .overlay {
+  width: 70%;   /* cover right half */
+  height: 80%; /* full height */
+  opacity: 1;
+}
+.project-four:hover .overlay {
+  width: 100%;   /* cover right half */
+  height: 80%; /* full height */
+  opacity: 1;
+}
+.project-five:hover .overlay {
+  width: 100%;   /* cover right half */
+  height: 80%; /* full height */
+  opacity: 1;
+}
+.project-six:hover .overlay {
+  width: 50%;   /* cover right half */
+  height: 80%; /* full height */
+  opacity: 1;
+}
+
+
+/* About Page Styling */
+.about-page {
+  background-image: url("../../public/img/AboutPage/MainPageImages/bgImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Section Three Styling */
+.section-three-bgImage {
+  background-image: url("../../public/img/SectionThree/backImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Section Five Styling */
+.section-five {
+  background-image: url("../../public/img/AboutPage/SectionFive/bgImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Services Page */
+.services-page {
+  background-image: url("../../public/img/ServicesPage/SectionOne/bgImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 700px) {
+    .services-page {
+      background-image: url("../../public/img/AboutPage/MainPageImages/bgImage.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+}
+
+
+/* Case Studies Page */
+
+
+/* Careers Page */
+.CareersPage {
+  background-image: url("../../public/img/CareersPage/image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 720px) {
+    .CareersPage {
+      background-image: url("../../public/img/CareersPage/image03.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+}
