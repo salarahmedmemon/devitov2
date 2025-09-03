@@ -80,33 +80,33 @@ export default function SectionOne() {
             <div className="w-full h-screen pt-15 md:pt-26 relative overflow-hidden">
               <img
                 src="/img/ServicesPage/SectionOne/image02.png"
-                className="img-top hidden md:block absolute top-[5vw] left-[29vw] h-[16vw]"
+                className="img-top hidden md:block absolute top-[5vw] left-[29vw] h-[14vw]"
               />
               <img
                 src="/img/ServicesPage/SectionOne/image03.png"
-                className="img-left-bottom hidden md:block absolute top-[7vw] right-[43vw] rotate-30 w-[5vw]"
+                className="img-left-bottom hidden md:block absolute top-[9vw] right-[43vw] rotate-30 w-[4vw]"
               />
               <div className="w-full h-[50vh] md:h-[83vh] flex flex-col-reverse md:flex-row items-center justify-center md:gap-10 ps-25.5 pe-25.5">
                 <div className="text-container w-[50vw] sm:w-[90%] md:w-[50%] h-full flex flex-col items-center md:items-start justify-center">
-                  <button className="px-6 py-2 bg-white text-purple-800 text-[5vw] sm:text-[3vw] md:text-[2.5vw] font-bold rounded-lg mt-2 md:mt-20">
+                  <button className="px-6 py-2 bg-white text-[#4C4886] text-[5vw] sm:text-[2.4vw] md:text-[2.5vw] font-bold rounded-lg mt-2 md:mt-20">
                     LET'S SEE
                   </button>
-                  <h1 className="text-white leading-[14vw] sm:leading-[8.4vw] md:leading-[6vw] font-bold text-[15vw] sm:text-[10vw] md:text-[6.5vw]">
+                  <h1 className="text-white leading-[14vw] sm:leading-[8.4vw] md:leading-[6vw] font-bold text-[15vw] sm:text-[7vw] md:text-[6.5vw]">
                     SERVICES
                   </h1>
                   <span className="text-[3vw] text-white">DETAILS</span>
-                  <p className="text-white text-[4vw] sm:text-[2.4vw] md:text-[1.5vw] w-[90vw] sm:w-[100%] md:w-[85%] text-center md:text-start">
+                  <p className="text-white text-[4vw] sm:text-[2vw] md:text-[1.5vw] w-[90vw] sm:w-[100%] md:w-[85%] text-center md:text-start">
                    Lorem ipsum is simply dummy text of the printing and typesetting
                    industry. Lorem ipsum has been the industry's standard dummy text ever
                    since the 1500s.
                   </p>
-                  <button className="px-4 py-2 bg-white text-purple-800 text-[3.4vw] sm:text-[2.4vw] md:text-[1.4vw] font-bold rounded-lg mt-4 md:mt-10">
+                  <button className="px-4 py-2 bg-white text-[#4C4886] text-[3.4vw] sm:text-[2.4vw] md:text-[1.4vw] font-bold rounded-lg mt-4 md:mt-10">
                     Talk to our expert
                   </button>
                 </div>
-                <div className="main-img-container w-[70vw] sm:w-[44vw] md:w-[50%] h-full flex items-center justify-center overflow-hidden">
+                <div className="main-img-container w-[70vw] sm:w-[40vw] md:w-[50%] h-full flex items-center justify-center overflow-hidden">
                   <img
-                    src="/img/CaseStudies/SectionOne/image01.png"
+                    src="/img/ServicesDetailPage/SectionOne/image01.png"
                     className="pt-4 sm:pt-10 md:pt-0 w-[95%] sm:w-[65%] md:w-[85%]"
                   />
                 </div>

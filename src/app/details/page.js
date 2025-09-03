@@ -1,20 +1,22 @@
 'use client';
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import SectionOne from "./SectionOne";
-import SectionThree from "./SectionThree";
 import SectionTwo from "./SectionTwo";
+import SectionThree from "./SectionThree";
+import SectionFour from "./SectionFour";
+import Footer from "../components/Footer";
 
 export default function CaseStudiesPage() {
     // 1. states/hook variables
     const detailsPage = useRef(null);
     const [isLoaded, setIsLoaded] = useState(true);
 
+    // loader timeout
     useEffect(() => {
-        let ctx = gsap.context(() => {
-
-        }, detailsPage)
-
-        return () => ctx.revert();
+        const timer = setTimeout(() => {
+        setIsLoaded(false);
+        }, 1500); // 1.5s for smoother transition
+        return () => clearTimeout(timer);
     }, []);
 
     // 2. functions/methods
@@ -25,7 +27,7 @@ export default function CaseStudiesPage() {
             {
                 isLoaded ? (
                      // loader
-                    <div className="w-full h-screen bg-blue-950 flex items-center justify-center">
+                    <div className="w-full h-[75vh] md:h-screen bg-blue-950 flex items-center justify-center">
                     <h1 className="text-white text-3xl font-bold animate-pulse">Loading...</h1>
                     </div>
                 ) : (
@@ -33,6 +35,8 @@ export default function CaseStudiesPage() {
                         <SectionOne />
                         <SectionTwo />
                         <SectionThree />
+                        <SectionFour />
+                        <Footer />
                     </div>
                 )
             }

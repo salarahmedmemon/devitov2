@@ -14,7 +14,7 @@ const SectionThree = () => {
                     </div>
                     
                     {/* SHOWCASE BLOGS */}
-                    <div className="w-full h-full m-[1vw] pt-[4vw] sm:mt-[0vw] flex items-center justify-center flex-wrap gap-4 pb-10">
+                    <div className="w-full h-full m-[1vw] pt-[4vw] sm:mt-[0vw] flex items-center justify-center flex-wrap gap-4 pb-5 sm:pb-20 md:pb-10">
 
                         {/* BLOG ONE */}
                         <div className="w-[90%] sm:w-[40%] md:w-[22%] sm:h-[32vh] md:h-[68vh] gradient-border rounded-[1vw] p-[.3vw] sm:p-[.2vw] md:p-[.1vw]">

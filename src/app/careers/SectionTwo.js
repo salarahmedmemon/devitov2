@@ -5,7 +5,7 @@ const SectionTwo = () => {
 
     // 3. return statement/jsx
     return (
-        <div className="w-full h-[127vh] sm:h-[105vh] md:h-screen bg-[#EEEEEE] relative overflow-hidden">
+        <div className="w-full h-[127vh] sm:h-[105vh] md:h-[105vh] bg-[#EEEEEE] relative overflow-hidden">
             <div className="hidden sm:block w-[40vw] h-[40vw] bg-white rounded-full p-1 absolute bottom-[-13vw] left-[-8vw]">
                 <div className="w-full h-full bg-[#EEEEEE] rounded-full"></div>
             </div>
