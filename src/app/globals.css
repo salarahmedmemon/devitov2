@@ -262,3 +262,7 @@ html {
   background-size: cover;
   background-position: center;
 }
+
+.faq-section-three {
+  background-position: center 12vw;
+}

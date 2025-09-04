@@ -2,6 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 import SectionOne from "./SectionOne";
 import SectionTwo from "./SectionTwo";
+import SectionThree from "./SectionThree";
+import Footer from "../components/Footer";
 
 export default function CaseStudiesPage() {
     // 1. states/hook variables
@@ -31,6 +33,8 @@ export default function CaseStudiesPage() {
                     <div ref={detailsPage}>
                         <SectionOne />
                         <SectionTwo />
+                        <SectionThree />
+                        <Footer />
                     </div>
                 )
             }
