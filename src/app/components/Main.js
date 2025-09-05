@@ -14,7 +14,7 @@ const Main = () => {
         // </div>
         <div className="w-full h-[37vh] sm:h-[50vh] md:h-screen relative">
             <Header />
-            <div className="w-full h-full pt-[30vw] sm:pt-[14vw]">
+            <div className="w-full h-full pt-[25vw] sm:pt-[14vw]">
                 <SectionOne />
             </div>
         </div>

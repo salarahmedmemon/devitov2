@@ -9,6 +9,7 @@ import SectionFour from "../components/SectionFour";
 import SectionFive from "./SectionFive";
 import SectionSix from "./SectionSix";
 import Footer from "../components/Footer";
+import SectionOne from "../utils/SectionOne";
 
 gsap.registerPlugin(ScrollTrigger);
 

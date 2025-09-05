@@ -1,5 +1,6 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 import SectionOne from '../utils/SectionOne';
 import SectionTwo from '../utils/SectionTwo';
 import SectionThree from "./SectionThree";
@@ -11,38 +12,48 @@ export default function DetailsPage() {
     const [isLoaded, setIsLoaded] = useState(true);
     const containerRef = useRef(null);
 
-    // 2. functions/methods
+    // 2. loader effect
     useEffect(() => {
-        const timer = setTimeout(() => { setIsLoaded(false) }, 500);
+        const timer = setTimeout(() => {
+            setIsLoaded(false);
+        }, 500);
         return () => clearTimeout(timer);
     }, []);
 
-
+    // 3. gsap context setup (optional global animations if needed)
     useEffect(() => {
         if (isLoaded || !containerRef.current) return;
 
-        let ctx = gsap.context(() => {}, containerRef);
-        return () => ctx.revert(timer);
+        let ctx = gsap.context(() => {
+            // you can add global animations here if needed
+        }, containerRef);
+
+        return () => ctx.revert();  // ✅ fixed (no timer argument)
     }, [isLoaded]);
 
-    // 3. return statement/jsx
+    // 4. return statement/jsx
     return (
         <>
-        {
-            isLoaded ? (
-                // loader
+            {isLoaded ? (
+                // Loader
                 <div className="w-full h-[72vh] sm:h-[80vh] lg:h-screen bg-blue-950 flex items-center justify-center">
-                <h1 className="text-white text-3xl font-bold animate-pulse">Loading...</h1>
+                    <h1 className="text-white text-3xl font-bold animate-pulse">
+                        Loading...
+                    </h1>
                 </div>
             ) : (
                 <>
-                    <SectionOne name="caseStudiesPage" btnText="OUR CASE"
-                      heading="STUDIES" paragraph="We have made quality our habbit. It's not something that we just strive
-                                    for - we live by this principle every day."
-                      secondBtnText="TALK TO OUR EXPERT" rightImage="img/CaseStudiesPage/image2.png"
-                      astronoutImage="/img/ServicesPage/SectionOne/image02.png"
-                      missileImage="/img/ServicesPage/SectionOne/image03.png"
+                    <SectionOne
+                        name="caseStudiesPage"
+                        btnText="OUR CASE"
+                        heading="STUDIES"
+                        paragraph="We have made quality our habit..."
+                        secondBtnText="TALK TO OUR EXPERT"
+                        rightImage="img/CaseStudiesPage/image2.png"
+                        astronoutImage="/img/ServicesPage/SectionOne/image02.png"
+                        missileImage="/img/ServicesPage/SectionOne/image03.png"
                     />
+
                     <SectionTwo
                         topTitle="Our Company"
                         mainTitle="Case Studies"
@@ -55,25 +66,25 @@ export default function DetailsPage() {
                         highlightText="Cost-effective and Comprehensive IT Outsourcing Services:"
                         boxes={[
                             {
-                            title: ".Problem Statement",
-                            text: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
+                                title: ".Problem Statement",
+                                text: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
                             },
                             {
-                            title: ".Possible Solution",
-                            text: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
+                                title: ".Possible Solution",
+                                text: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
                             },
                             {
-                            title: ".Design Process",
-                            text: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
+                                title: ".Design Process",
+                                text: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
                             }
                         ]}
                     />
+
                     <SectionThree />
                     <SectionFour />
                     <Footer />
                 </>
-            )
-        }
+            )}
         </>
     );
 }

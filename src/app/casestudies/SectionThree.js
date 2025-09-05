@@ -1,15 +1,85 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const SectionThree = () => {
+  // 1. states/hook variables
   const [isExpanded, setIsExpanded] = useState(false);
+  
+  // Refs
+  const topRef = useRef(null);
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+
+  // useEffect
+  useEffect(() => {
+        // Title (from top)
+        if (topRef.current) {
+            gsap.fromTo(
+                topRef.current,
+                { y: -150, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1.2,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: topRef.current,
+                        start: "top 80%", // when 80% of viewport reached
+                        toggleActions: "play none none reverse",
+                    },
+                }
+            );
+        }
+
+        // Left image
+        if (leftRef.current) {
+            gsap.fromTo(
+                leftRef.current,
+                { x: -200, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1.2,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: leftRef.current,
+                        start: "top 85%",
+                        toggleActions: "play none none reverse",
+                    },
+                }
+            );
+        }
+
+        // Right content
+        if (rightRef.current) {
+            gsap.fromTo(
+                rightRef.current,
+                { x: 200, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1.2,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: rightRef.current,
+                        start: "top 85%",
+                        toggleActions: "play none none reverse",
+                    },
+                }
+            );
+        }
+  }, []);
 
   return (
     <div className="w-full bg-[#0A131C] p-5 sm:p-20">
       <div className="w-full gradient-border rounded-[1vw] p-1">
         <div className="w-full bg-[#0A131C] rounded-[1vw] text-white">
           {/* Section Title */}
-          <div className="text-center w-[50vw] sm:w-[34vw] md:w-[14vw] mx-auto pt-6 sm:pt-[4vw]">
+          <div ref={topRef} className="text-center w-[50vw] sm:w-[34vw] md:w-[14vw] mx-auto pt-6 sm:pt-[4vw]">
             <h1 className="text-[9vw] sm:text-[5vw] md:text-[2.4vw] border-t-3 border-t-[#77CCF3]">
               Our Design
             </h1>
@@ -19,7 +89,7 @@ const SectionThree = () => {
           </div>
 
           {/* Description */}
-          <p className="text-center p-6 sm:p-10">
+          <p ref={leftRef} className="text-center p-6 sm:p-10">
             Lorem ipsum is simply dummy text of the printing and typsetting
             industry. Lorem ipsum has been the industry's standard dummy text
             ever since the 1500s, When an unknown printer took a gallery of type
@@ -41,11 +111,11 @@ const SectionThree = () => {
               onMouseEnter={() => setIsExpanded(true)}
               onMouseLeave={() => setIsExpanded(false)}
             >
-              <div className="w-full h-full bg-[#0A131C] rounded-lg p-5 flex items-start justify-center gap-4 flex-wrap">
+              <div ref={rightRef} className="w-full h-full bg-[#0A131C] rounded-lg p-5 flex items-start justify-center gap-4 flex-wrap">
                 {/* Card 1 */}
                 <div className="w-[100%] sm:w-[40%] md:w-[22%] rounded-lg p-1">
                   <div className="w-full gradient-border rounded-lg p-1">
-                    <div className="w-full h-full rounded-lg overflow-hidden">
+                    <div className="w-full h-full md:h-[34.1vh] rounded-lg overflow-hidden">
                       <img
                         src="/img/CaseStudiesPage/SectionThree/image01.png"
                         className={`w-full h-full object-cover rounded-lg transition-transform duration-500 ${
@@ -74,7 +144,7 @@ const SectionThree = () => {
                 {/* Card 2 */}
                 <div className="w-[100%] sm:w-[40%] md:w-[22%] rounded-lg p-1">
                   <div className="w-full gradient-border rounded-lg p-1">
-                    <div className="w-full h-full rounded-lg overflow-hidden">
+                    <div className="w-full h-full md:h-[34.1vh] rounded-lg overflow-hidden">
                       <img
                         src="/img/CaseStudiesPage/SectionThree/image02.png"
                         className={`w-full h-full object-cover rounded-lg transition-transform duration-500 ${
@@ -103,7 +173,7 @@ const SectionThree = () => {
                 {/* Card 3 */}
                 <div className="w-[100%] sm:w-[40%] md:w-[22%] rounded-lg p-1">
                   <div className="w-full gradient-border rounded-lg p-1">
-                    <div className="w-full h-full rounded-lg overflow-hidden">
+                    <div className="w-full h-full md:h-[34.1vh] rounded-lg overflow-hidden">
                       <img
                         src="/img/CaseStudiesPage/SectionThree/image03.png"
                         className={`w-full h-full object-cover rounded-lg transition-transform duration-500 ${
@@ -132,7 +202,7 @@ const SectionThree = () => {
                 {/* Card 4 */}
                 <div className="w-[100%] sm:w-[40%] md:w-[22%] rounded-lg p-1">
                   <div className="w-full gradient-border rounded-lg p-1">
-                    <div className="w-full h-full rounded-lg overflow-hidden">
+                    <div className="w-full h-full md:h-[34.1vh] rounded-lg overflow-hidden">
                       <img
                         src="/img/CaseStudiesPage/SectionThree/image04.png"
                         className={`w-full h-full object-cover rounded-lg transition-transform duration-500 ${

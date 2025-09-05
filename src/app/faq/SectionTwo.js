@@ -69,7 +69,7 @@ const SectionTwo = () => {
   return (
     <div
       ref={sectionRef}
-      className="w-full min-h-screen bg-[#EEEEEE] pt-10 overflow-hidden relative"
+      className="w-full h-[170vh] sm:min-h-screen md:h-screen bg-[#EEEEEE] pt-10 overflow-hidden relative"
       style={{ opacity: 0 }} // hide until loaded
     >
       <img

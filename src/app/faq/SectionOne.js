@@ -88,7 +88,7 @@ export default function SectionOne() {
               />
               <div className="w-full h-[50vh] md:h-[83vh] flex flex-col-reverse md:flex-row items-center justify-center md:gap-10 ps-25.5 pe-25.5">
                 <div className="text-container w-[50vw] sm:w-[90%] md:w-[50%] h-full flex flex-col items-center md:items-start justify-center">
-                  <button className="px-6 py-2 bg-white text-[#4C4886] text-[5vw] sm:text-[2.4vw] md:text-[2.5vw] font-bold rounded-lg mt-2 md:mt-20">
+                  <button className="px-6 py-2 bg-white text-[#4C4886] text-[5vw] sm:text-[2.4vw] md:text-[2.5vw] font-bold rounded-lg mt-0 sm:mt-6 md:mt-20">
                     OUR FAQ'S
                   </button>
                   <h1 className="text-white leading-[14vw] sm:leading-[8.4vw] md:leading-[6vw] font-bold text-[15vw] sm:text-[7vw] md:text-[6.5vw]">
@@ -107,7 +107,7 @@ export default function SectionOne() {
                 <div className="main-img-container w-[70vw] sm:w-[40vw] md:w-[50%] h-full flex items-center justify-center overflow-hidden">
                   <img
                     src="/img/FAQ/image02.png"
-                    className="pt-4 sm:pt-10 md:pt-0 ms-[12vw] w-[95%] sm:w-[65%] md:w-[87%]"
+                    className="pt-4 sm:pt-10 md:pt-0 md:ms-[12vw] w-[80%] sm:w-[65%] md:w-[87%]"
                   />
                 </div>
               </div>

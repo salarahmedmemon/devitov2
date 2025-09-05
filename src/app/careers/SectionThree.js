@@ -1,5 +1,55 @@
+"use client";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const SectionThree = () => {
     // 1. states/hook variables
+    const topRef = useRef(null);
+    const leftRef = useRef(null);
+
+    useEffect(() => {
+        // Title (from top)
+        if (topRef.current) {
+            gsap.fromTo(
+                topRef.current,
+                { y: -150, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1.2,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: topRef.current,
+                        start: "top 80%", // when 80% of viewport reached
+                        toggleActions: "play none none reverse",
+                    },
+                }
+            );
+        }
+
+        // Left image
+        if (leftRef.current) {
+            gsap.fromTo(
+                leftRef.current,
+                { x: -200, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1.2,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: leftRef.current,
+                        start: "top 85%",
+                        toggleActions: "play none none reverse",
+                    },
+                }
+            );
+        }
+        
+    }, []);
 
     // 2. functions/methods
 
@@ -8,13 +58,13 @@ const SectionThree = () => {
         <div className="w-full sm:h-[94vh] md:h-[140vh] bg-[#0A131C] pt-[7vw] p-[4vw]">
             <div className="w-full h-full gradient-border p-[.3vw] sm:p-[.2vw] md:p-[.1vw] rounded-lg">
                 <div className="w-full h-full bg-[#0A131C] rounded-lg pt-[5vw]">
-                    <div className="text-center text-white text-[6vw] sm:text-[2.4vw] w-[40vw] sm:w-[15vw] mx-auto border-t-1 sm:border-t-2 border-[#6CBADD]">
+                    <div ref={topRef} className="text-center text-white text-[6vw] sm:text-[2.4vw] w-[40vw] sm:w-[15vw] mx-auto border-t-1 sm:border-t-2 border-[#6CBADD]">
                         <h1>See Our</h1>
                         <h2 className="text-[#6CBADD] font-semibold">Latest Blog</h2>
                     </div>
                     
                     {/* SHOWCASE BLOGS */}
-                    <div className="w-full h-full m-[1vw] pt-[4vw] sm:mt-[0vw] flex items-center justify-center flex-wrap gap-4 pb-5 sm:pb-20 md:pb-10">
+                    <div ref={leftRef} className="w-full h-full m-[1vw] pt-[4vw] sm:mt-[0vw] flex items-center justify-center flex-wrap gap-4 pb-5 sm:pb-20 md:pb-10">
 
                         {/* BLOG ONE */}
                         <div className="w-[90%] sm:w-[40%] md:w-[22%] sm:h-[32vh] md:h-[68vh] gradient-border rounded-[1vw] p-[.3vw] sm:p-[.2vw] md:p-[.1vw]">

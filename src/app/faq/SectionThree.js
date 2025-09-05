@@ -1,4 +1,10 @@
+"use client";
 import { useState } from "react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const questions = [
   {
@@ -21,32 +27,75 @@ const questions = [
 const SectionThree = () => {
   const [clicked, setClicked] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+
+  useEffect(() => {
+        
+        // Left image
+        if (leftRef.current) {
+            gsap.fromTo(
+                leftRef.current,
+                { x: -200, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1.2,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: leftRef.current,
+                        start: "top 85%",
+                        toggleActions: "play none none reverse",
+                    },
+                }
+            );
+        }
+
+        // Right content
+        if (rightRef.current) {
+            gsap.fromTo(
+                rightRef.current,
+                { x: 200, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1.2,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: rightRef.current,
+                        start: "top 85%",
+                        toggleActions: "play none none reverse",
+                    },
+                }
+            );
+        }
+  }, []);
 
   return (
-    <div className="w-full min-h-[105vh] bg-[#0A131C]">
+    <div className="w-full h-[70vh] md:min-h-[105vh] bg-[#0A131C]">
       {/* Header */}
-      <h1 className="text-[#4C4886] pt-[6vw] text-center font-semibold text-[2vw]">
+      <h1 ref={leftRef} className="text-[#4C4886] pt-[6vw] text-center font-semibold text-[4vw] md:text-[2vw]">
         A Frequently Asked Question
       </h1>
-      <p className="text-center text-[#656565] pt-[1vw]">
+      <p ref={rightRef} className="text-center text-[#656565] pt-[1vw]">
         Quick answers to questions you may have about untitled UI and billing.
       </p>
 
       {/* Search */}
-      <div className="relative w-fit mx-auto">
+      <div ref={leftRef} className="relative w-fit mx-auto">
         <input
           type="text"
           placeholder="Search"
-          className="bg-white py-[.5vw] mt-[1.5vw] rounded-lg w-[28vw] text-gray-500 text-[1.3vw] ps-[3.4vw]"
+          className="bg-white py-2 md:py-[.5vw] mt-[1.5vw] rounded-lg w-[35vw] md:w-[28vw] text-gray-500 text-[2vw] md:text-[1.3vw] ps-[5vw] md:ps-[3.4vw]"
         />
         <img
           src="/img/FAQ/image04.png"
-          className="absolute top-[2.3vw] left-[1vw] w-[1.5vw]"
+          className="absolute top-[3.1vw] md:top-[2.3vw] left-[1.5vw] md:left-[1vw] w-[2vw] md:w-[1.5vw]"
         />
       </div>
 
       {/* Category buttons */}
-      <div className="mx-auto w-fit mt-[4vw] text-[#848688] text-[1.5vw] flex gap-[1vw]">
+      <div ref={rightRef} className="mx-auto w-fit mt-[4vw] text-[#848688] text-[2.5vw] md:text-[1.5vw] flex gap-[2vw] md:gap-[1vw]">
         <button className="bg-transparent font-semibold border-1 px-2 rounded border-[#3D3C6D] text-[#3D3C6D]">
           General
         </button>
@@ -59,13 +108,13 @@ const SectionThree = () => {
 
       <hr className="text-[#828484] mt-[1vw] w-[90vw] mx-auto" />
 
-      <h2 className="text-[#4A4682] ps-[4.4vw] pt-[.7vw] font-semibold text-[1.8vw]">
+      <h2 ref={leftRef} className="text-[#4A4682] ps-[4.4vw] pt-[.7vw] font-semibold text-[2.7vw] md:text-[1.8vw]">
         General Questions
       </h2>
 
       {/* Conditional Rendering */}
       {!clicked ? (
-        <div className="w-[90vw] mx-auto mt-[2vw] flex flex-wrap items-center justify-center gap-4">
+        <div ref={leftRef} className="w-[90vw] mx-auto mt-[2vw] flex flex-wrap items-center justify-center gap-4">
           {questions.map((q, i) => (
             <div
               key={i}
@@ -73,7 +122,7 @@ const SectionThree = () => {
                 setClicked(true);
                 setActiveIndex(i);
               }}
-              className="w-full h-[10vh] border-1 border-gray-300 rounded-lg relative cursor-pointer"
+              className="w-full h-[5vh] md:h-[10vh] border-1 border-gray-300 rounded-lg relative cursor-pointer"
             >
               <img
                 src="/img/FAQ/arrow.png"
@@ -86,7 +135,7 @@ const SectionThree = () => {
       ) : (
         <div className="w-[90vw] mx-auto mt-[2vw] flex gap-4">
           {/* Left Column */}
-          <div className="w-[48%] h-full flex flex-col gap-6">
+          <div className="w-[48%] h-[20vh] md:h-full flex flex-col gap-6">
             {questions.map((q, i) => (
               <div
                 key={i}
@@ -99,7 +148,7 @@ const SectionThree = () => {
               >
                 {activeIndex === i && (
                 <>
-                  <h2 className="font-semibold text-[1.3vw]">{q.title}</h2>
+                  <h2 className="font-semibold text-[1.8vw] md:text-[1.3vw]">{q.title}</h2>
                   <img src="/img/FAQ/whitearrow.png" className="w-[4vw]" />
                 </>
                 )}
@@ -111,10 +160,10 @@ const SectionThree = () => {
 
           {/* Right Column */}
           <div className="w-[48%] h-full">
-            <h3 className="text-[#4A4783] font-semibold text-[1.6vw]">
+            <h3 className="text-[#4A4783] font-semibold text-[2.4vw] md:text-[1.6vw]">
               {questions[activeIndex].title}
             </h3>
-            <p className="text-[#56585A] text-[1vw] mt-[1vw]">
+            <p className="text-[#56585A] text-[2vw] md:text-[1vw] mt-[1vw]">
               {questions[activeIndex].content}
             </p>
           </div>
