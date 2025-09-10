@@ -92,35 +92,48 @@ const SectionThree = () => {
 
             <div className="ListOfServices w-[90%] sm:w-[28vw] md:w-[32vw] border-1 border-[#423D4C] absolute top-[77%] sm:top-[10vw] right-[5vw] p-4 rounded-lg">
                 <h1 className="text-white text-[1.4rem]">List of Services</h1>
-                <div className="w-[100%] h-[10%] bg-[#042A48] mt-8 rounded p-2 flex items-center gap-5">
-                    <img src="/img/ServicesDetailPage/SectionThree/wd.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
-                    <span className="text-white">Web Development</span>
-                </div>
+                <Link href="/packages">
+                    <div className="w-[100%] h-[10%] bg-[#042A48] mt-8 rounded p-2 flex items-center gap-5">
+                        <img src="/img/ServicesDetailPage/SectionThree/wd.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
+                        <span className="text-white">Web Development</span>
+                    </div>
+                </Link>
 
-                <div className="w-[100%] h-[10%] bg-[#042A48] mt-4 rounded p-2 flex items-center gap-5">
-                    <img src="/img/ServicesDetailPage/SectionThree/dm.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
-                    <span className="text-white">Digital Marketing</span>
-                </div>
+                <Link href="/packages">
+                    <div className="w-[100%] h-[10%] bg-[#042A48] mt-4 rounded p-2 flex items-center gap-5">
+                        <img src="/img/ServicesDetailPage/SectionThree/dm.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
+                        <span className="text-white">Digital Marketing</span>
+                    </div>
+                </Link>
+                
 
-                <div className="w-[100%] h-[10%] bg-[#042A48] mt-4 rounded p-2 flex items-center gap-5">
-                    <img src="/img/ServicesDetailPage/SectionThree/ma.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
-                    <span className="text-white">Mobile App</span>
-                </div>
+                <Link href="/packages">
+                    <div className="w-[100%] h-[10%] bg-[#042A48] mt-4 rounded p-2 flex items-center gap-5">
+                        <img src="/img/ServicesDetailPage/SectionThree/ma.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
+                        <span className="text-white">Mobile App</span>
+                    </div>
+                </Link>
 
-                <div className="w-[100%] h-[10%] bg-[#042A48] mt-4 rounded p-2 flex items-center gap-5">
-                    <img src="/img/ServicesDetailPage/SectionThree/uiux.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
-                    <span className="text-white">UI/UX Designing</span>
-                </div>
+                <Link href="/packages">
+                    <div className="w-[100%] h-[10%] bg-[#042A48] mt-4 rounded p-2 flex items-center gap-5">
+                        <img src="/img/ServicesDetailPage/SectionThree/uiux.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
+                        <span className="text-white">UI/UX Designing</span>
+                    </div>
+                </Link>
 
-                <div className="w-[100%] h-[10%] bg-[#042A48] mt-4 rounded p-2 flex items-center gap-5">
-                    <img src="/img/ServicesDetailPage/SectionThree/ecommerce.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
-                    <span className="text-white">Ecommerce</span>
-                </div>
+                <Link href="/packages">
+                    <div className="w-[100%] h-[10%] bg-[#042A48] mt-4 rounded p-2 flex items-center gap-5">
+                        <img src="/img/ServicesDetailPage/SectionThree/ecommerce.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
+                        <span className="text-white">Ecommerce</span>
+                    </div>
+                </Link>
 
-                <div className="w-[100%] h-[10%] bg-[#042A48] mt-4 rounded p-2 flex items-center gap-5">
-                    <img src="/img/ServicesDetailPage/SectionThree/db.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
-                    <span className="text-white">Digital Branding</span>
-                </div>
+                <Link href="/packages">
+                    <div className="w-[100%] h-[10%] bg-[#042A48] mt-4 rounded p-2 flex items-center gap-5">
+                        <img src="/img/ServicesDetailPage/SectionThree/db.png" className="h-[4vw] md:h-[2vw] md:w-[8%]" />
+                        <span className="text-white">Digital Branding</span>
+                    </div>
+                </Link>
             </div>
 
             <div className="ListOfServices text-white w-[90%] sm:w-[28vw] md:w-[32vw] border-1 border-[#423D4C] absolute top-[89%] sm:top-[90vw] md:top-[46vw] right-[5vw] p-4 rounded-lg">

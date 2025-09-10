@@ -256,7 +256,7 @@ html {
 
 
 /* FAQ PAGE STYLING */
-.faq-page {
+.faq-page, .packages, .termsCondition {
   background-image: url("../../public/img/FAQ/image.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -265,4 +265,10 @@ html {
 
 .faq-section-three {
   background-position: center 12vw;
+}
+
+
+/* Packages Page Styling */
+.packages {
+  background-image: url("../../public/img/Packages/bgimage.png");
 }

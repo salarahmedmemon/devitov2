@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -90,7 +91,7 @@ const Footer = () => {
         <div className="fade-in-up text-white text-[3.2vw] sm:text-[2vw] md:text-[1.2vw] flex items-center justify-center gap-2 mt-4 sm:mt-7 md:mt-8">
           <span>&copy; Copyright Reserved 2025</span>
           <span>|</span>
-          <span>Terms &amp; Services</span>
+          <Link href="/terms"><span>Terms &amp; Services</span></Link>
         </div>
       </div>
     </div>
