@@ -12,12 +12,12 @@ const SectionThree = () => {
     "Mobile App Development": "/img/ServicesPage/SectionThree/mobileapp.png",
     "IT Resource": "/img/ServicesPage/SectionThree/itresource.png",
     "E-Commerce Web Development": "/img/ServicesPage/SectionThree/ecommerce.png",
-    "UI/UX Development": "/img/ServicesPage/SectionThree/uiux.jpeg",
-    "Emerging Tech Development": "/img/ServicesPage/SectionThree/emerging.jpeg",
-    "Digital Branding & Communication": "/img/ServicesPage/SectionThree/dbc.jpeg",
-    "Web Development": "/img/ServicesPage/SectionThree/webdevelopment.jpeg",
-    "Video Animation": "/img/ServicesPage/SectionThree/video.jpeg",
-    "Digital Marketing": "/img/ServicesPage/SectionThree/marketing.jpeg",
+    "UI/UX Development": "/img/ServicesPage/SectionThree/uiux.png",
+    "Emerging Tech Development": "/img/ServicesPage/SectionThree/emerging.png",
+    "Digital Branding & Communication": "/img/ServicesPage/SectionThree/dbc.png",
+    "Web Development": "/img/ServicesPage/SectionThree/webdevelopment.png",
+    "Video Animation": "/img/ServicesPage/SectionThree/video.png",
+    "Digital Marketing": "/img/ServicesPage/SectionThree/marketing.png",
   };
 
   // reusable box component
@@ -37,7 +37,7 @@ const SectionThree = () => {
   );
 
   return (
-    <div className="w-full h-[100vh] sm:h-[110vh] md:h-[250vh] bg-[#0a131c] overflow-hidden flex items-center justify-center">
+    <div className="w-full h-[100vh] sm:h-[110vh] md:h-[180vh] bg-[#0a131c] overflow-hidden flex items-center justify-center">
       <div className="w-[50%] h-[80vh] relative">
         {/* iPhone Frame */}
         <div className="w-[24vw] h-[90vh] absolute top-[8vw] left-[13vw] flex items-center justify-center">
@@ -50,7 +50,7 @@ const SectionThree = () => {
               className="object-contain pointer-events-none"
             /> */} 
             {/* Dynamic screen content */}
-            <div className="z-1000 absolute top-[12%] left-[-22vw] sm:left-[-4.5vw] md:left-[12%] w-[67vw] sm:w-[140%] md:w-[80%] h-[50%] sm:h-[65%] md:h-[94%] overflow-hidden rounded-[2rem] bg-[#4ab6ff]">
+            <div className="z-1000 absolute top-[12%] left-[-22vw] sm:left-[-4.5vw] md:left-[12%] w-[67vw] sm:w-[140%] md:w-[80%] h-[50%] sm:h-[65%] md:h-[94%] overflow-hidden rounded-[2rem] transition-all duration-100 ease-in">
               <Image
                 src={activeImage}
                 alt="iPhone Screen"

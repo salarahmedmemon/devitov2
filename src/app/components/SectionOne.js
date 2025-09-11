@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
+import Link from 'next/link';
 
 const SectionOne = () => {
   // 1. states/hooks variables
@@ -49,9 +50,11 @@ const SectionOne = () => {
         <h4 className="animate-text font-bold z-1000 sm:text-[3.5vw] md:text-[3.5vw]">
           GLOBAL AUDIENCES
         </h4>
-        <button className="cursor-pointer animate-text bg-white z-5 px-5 py-2 rounded text-[#4C4886] text-[5vw] sm:text-[2.4vw] md:text-[2vw] mt-5 font-bold">
-          TALK TO OUR EXPERT
-        </button>
+        <Link href="/contactus">
+          <button className="cursor-pointer animate-text bg-white z-5 px-5 py-2 rounded text-[#4C4886] text-[5vw] sm:text-[2.4vw] md:text-[2vw] mt-5 font-bold">
+            TALK TO OUR EXPERT
+          </button>
+        </Link>
 
         <div
           onMouseEnter={handleMouseEnter}

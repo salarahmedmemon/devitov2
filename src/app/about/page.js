@@ -10,6 +10,8 @@ import SectionFive from "./SectionFive";
 import SectionSix from "./SectionSix";
 import Footer from "../components/Footer";
 import SectionOne from "../utils/SectionOne";
+import ContactUs from "../utils/ContactUs";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -176,14 +178,14 @@ export default function AboutPage() {
 
                 {/* left section */}
                 <div className="left-section w-1/2 h-full pt-12">
-                  <button className="px-[1vw] py-[0vw] bg-white text-purple-900 font-bold text-[3vw] rounded-lg">About</button>
+                  <button className="px-[1vw] py-[0vw] bg-white text-[#4C4886] font-bold text-[3vw] rounded-lg">About</button>
                   <h1 className="text-[7vw] leading-[6vw] text-white font-bold">Devnito</h1>
                   <p className="text-[#CACCCD] mt-8 w-[95%]">
                     DevNito is a leading provider of IT export services, offering custom software and SaaS
                     solutions to businesses worldwide. With a focus on tailored excellence, transparent collaboration,
                     and client-centricity, we aim to elevate your business to new heights.
                   </p>
-                  <button className="px-[3vw] py-[.8vw] bg-white text-purple-800 rounded-lg font-bold mt-8">CONTACT US</button>
+                  <Link href="/contactus"><button className="px-[3vw] py-[.8vw] bg-white text-[#4C4886] rounded-lg font-bold mt-8 cursor-pointer">CONTACT US</button></Link>
                 </div>
 
                 {/* right section */}
@@ -219,7 +221,8 @@ export default function AboutPage() {
           <SectionThree />
           <SectionFour />
           <SectionFive />
-          <SectionSix />
+          {/* <SectionSix /> */}
+          <ContactUs />
           <Footer />
         </>
       )}
