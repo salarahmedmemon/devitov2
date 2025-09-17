@@ -42,15 +42,23 @@ html {
     100% { transform: translateY(0); }
 }
 
-.first-column img, .third-column img{
+/* .first-column img, .third-column img{
     animation: upDownColumns 3s ease-in-out infinite;
+} */
+
+.first-column, .third-column {
+  animation: upDownColumns 3s ease-in-out infinite;
 }
 
-.second-column img {
+/* .second-column img {
     animation: downUpColumns 3s ease-in-out infinite;
+} */
+
+.second-column {
+  animation: downUpColumns 3s ease-in-out infinite;
 }
 
-.images:hover img{
+.images:hover .first-column, .images:hover .second-column, .images:hover .third-column{
     animation-play-state: paused !important;
 }
 
@@ -76,7 +84,7 @@ html {
 
 
 .animate-slide {
-  animation: slide 6s ease infinite;
+  animation: slide 12s ease infinite;
 }
 
 @keyframes slide {
