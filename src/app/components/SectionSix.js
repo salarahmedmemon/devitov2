@@ -123,7 +123,7 @@ function FAQItem({ q, a1, a2, id }) {
             onClick={toggle}
             aria-expanded={open}
             aria-controls={`faq-content-${id}`}
-            className="w-7 h-7 md:w-8 md:h-8 bg-white text-[#767C9E] text-[2rem] pb-2 flex items-center justify-center rounded cursor-pointer"
+            className="w-7 h-7 md:w-8 md:h-8 bg-white text-[#767C9E] text-[2rem] sm:pb-2 flex items-center justify-center rounded cursor-pointer"
           >
             <span ref={iconRef}>+</span>
           </button>

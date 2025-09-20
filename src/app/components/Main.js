@@ -8,13 +8,10 @@ const Main = () => {
 
     // 3. return statement/jsx
     return(
-        // <div className="main w-full h-[37vh] sm:h-[50vh] md:h-screen relative">
-        //     <Header />
-        //     <SectionOne />
-        // </div>
-        <div className="w-full h-[37vh] sm:h-[50vh] md:h-screen relative">
+        <div className="w-full h-[48.5vh] md:h-screen relative">
             <Header />
-            <div className="w-full h-full pt-[25vw] sm:pt-[14vw]">
+            
+            <div className="w-full pt-[25vw] sm:pt-[14vw]">
                 <SectionOne />
             </div>
         </div>

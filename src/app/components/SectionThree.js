@@ -132,18 +132,18 @@ const SectionThree = () => {
             alt="project one"
           />
           <div className="overlay opacity-0 text-white flex flex-col items-end text-[.6vw]">
-            <span className="mt-[8vw] sm:mt-[6vw] md:mt-[10vh] font-bold text-[4vw] sm:text-[1.7vw] md:text-[1vw] pe-[4.5vw] sm:pe-[1.6vw] md:pe-[2.5vw]">
+            <span className="mt-[5vw] sm:mt-[6vw] md:mt-[10vh] font-bold text-[3.5vw] sm:text-[1.7vw] md:text-[1vw] pe-[4.5vw] sm:pe-[1.6vw] md:pe-[2.5vw]">
               Printing Media
             </span>
-            <p className="pe-[1vw] text-green-400 text-[3vw] sm:text-[1.3vw] md:text-[.7vw]">
+            <p className="pe-[1vw] text-green-400 text-[2.5vw] sm:text-[1.3vw] md:text-[.7vw]">
               Short Detail Here
             </p>
-            <p className="w-[80%] pt-[6vw] sm:pt-[1vw] md:pt-[4vh] ms-[.8vw] text-[2.5vw] sm:text-[1vw] md:text-[.7vw]">
+            <p className="w-[80%] pt-[1vw] sm:pt-[1vw] md:pt-[4vh] ms-[.8vw] text-[2vw] sm:text-[1vw] md:text-[.7vw]">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </p>
-            <div className="w-[100%] flex items-center justify-between text-[2.4vw] sm:text-[.9vw] md:text-[.7vw] mt-[4vw] sm:mt-[1vw] md:mt-[7vh] p-[3vw] pb-0 sm:p-[1vw]">
+            <div className="w-[100%] flex items-center justify-between text-[2.4vw] sm:text-[.9vw] md:text-[.7vw] mt-[2vw] sm:mt-[1vw] md:mt-[7vh] p-[3vw] pb-0 sm:p-[1vw]">
               <a href="#" className="float-left">
                 Visit Main Link
               </a>
@@ -174,12 +174,12 @@ const SectionThree = () => {
             <p className="pe-[1vw] text-green-400 text-[2.8vw] sm:text-[1vw] md:text-[.7vw]">
               Short Detail Here
             </p>
-            <p className="w-[75%] sm:w-[80%] pt-[4vw] sm:pt-[1.5vw] md:pt-[4vh] me-[1vw] text-[2.3vw] sm:text-[.8vw] md:text-[.7vw]">
+            <p className="w-[75%] sm:w-[80%] pt-[2vw] sm:pt-[1.5vw] md:pt-[4vh] me-[1vw] text-[2vw] sm:text-[.8vw] md:text-[.7vw]">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </p>
-            <div className="w-[100%] flex items-center justify-between text-[2vw] sm:text-[.7vw] mt-[5vw] sm:mt-[0vw] md:mt-[.6vh] p-[3vw] sm:p-[1vw]">
+            <div className="w-[100%] flex items-center justify-between text-[2vw] sm:text-[.7vw] mt-[0vw] sm:mt-[0vw] md:mt-[.6vh] p-[3vw] sm:p-[1vw]">
               <a href="#" className="float-left">
                 Visit Main Link
               </a>
@@ -204,18 +204,18 @@ const SectionThree = () => {
             alt="project three"
           />
           <div className="overlay opacity-0 text-white flex flex-col items-end text-[.6vw]">
-            <span className="mt-[8vw] sm:mt-[7vw] md:mt-[10vh] font-bold text-[5vw] sm:text-[2vw] pe-[1.7vw] md:pe-[2.5vw]">
+            <span className="mt-[6vw] sm:mt-[7vw] md:mt-[10vh] font-bold text-[3.5vw] sm:text-[2vw] pe-[2.5vw]">
               Printing Media
             </span>
-            <p className="pe-[1vw] text-green-400 text-[3vw] sm:text-[1.4vw] md:text-[1.2vw]">
+            <p className="pe-[1vw] text-green-400 text-[2.5vw] sm:text-[1.4vw] md:text-[1.2vw]">
               Short Detail Here
             </p>
-            <p className="w-[80%] pt-[2vw] md:pt-[4vh] me-[1vw] text-[2.4vw] sm:text-[1.2vw] md:text-[1vw]">
+            <p className="w-[80%] pt-[2vw] md:pt-[4vh] me-[1vw] text-[2vw] sm:text-[1.2vw] md:text-[1vw]">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </p>
-            <div className="w-[100%] flex items-center justify-between text-[2vw] sm:text-[1.1vw] md:text-[.9vw] mt-[6vw] sm:mt-[1vw] md:mt-[3vh] p-[3vw] sm:p-[1vw]">
+            <div className="w-[100%] flex items-center justify-between text-[2vw] sm:text-[1.1vw] md:text-[.9vw] mt-[0vw] sm:mt-[1vw] md:mt-[3vh] p-[3vw] sm:p-[1vw]">
               <a href="#" className="float-left">
                 Visit Main Link
               </a>
@@ -241,18 +241,18 @@ const SectionThree = () => {
             alt="project four"
           />
           <div className="overlay opacity-0 text-white flex flex-col items-end text-[.6vw]">
-            <span className="mt-[6vw] sm:mt-[2vw] md:mt-[5vh] font-bold text-[3.5vw] sm:text-[1.3vw] md:text-[1vw] pe-[5vw] sm:pe-[2.5vw]">
+            <span className="mt-[4vw] sm:mt-[2vw] md:mt-[5vh] font-bold text-[3.5vw] sm:text-[1.3vw] md:text-[1vw] pe-[5vw] sm:pe-[2.5vw]">
               Printing Media
             </span>
             <p className="pe-[1vw] text-green-400 text-[2.5vw] sm:text-[1vw] md:text-[.7vw]">
               Short Detail Here
             </p>
-            <p className="w-[75%] sm:w-[80%] pt-[4vw] sm:pt-[1vw] md:pt-[2vh] text-[2.4vw] sm:text-[.9vw] md:text-[.7vw]">
+            <p className="w-[75%] sm:w-[80%] pt-[2vw] sm:pt-[1vw] md:pt-[2vh] text-[2vw] sm:text-[.9vw] md:text-[.7vw]">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </p>
-            <div className="w-[100%] flex items-center justify-between text-[2.5vw] sm:text-[.9vw] md:text-[.7vw] mt-[8vw] sm:mt-0 md:mt-[1vh] p-[4vw] sm:p-[1vw]">
+            <div className="w-[100%] flex items-center justify-between text-[2.5vw] sm:text-[.9vw] md:text-[.7vw] mt-[0vw] sm:mt-0 md:mt-[1vh] p-[4vw] sm:p-[1vw]">
               <a href="#" className="float-left">
                 Visit Main Link
               </a>
@@ -278,18 +278,18 @@ const SectionThree = () => {
             alt="project five"
           />
           <div className="overlay opacity-0 text-white flex flex-col items-end text-[.6vw]">
-            <span className="mt-[6vw] sm:mt-[5vw] md:mt-[10vh] font-bold text-[4vw] sm:text-[2vw] pe-[2.5vw]">
+            <span className="mt-[4vw] sm:mt-[5vw] md:mt-[10vh] font-bold text-[3.5vw] sm:text-[2vw] pe-[2.5vw]">
               Printing Media
             </span>
-            <p className="pe-[1vw] text-green-400 text-[2.6vw] sm:text-[1.4vw] md:text-[1.2vw]">
+            <p className="pe-[1vw] text-green-400 text-[2.5vw] sm:text-[1.4vw] md:text-[1.2vw]">
               Short Detail Here
             </p>
-            <p className="w-[75%] sm:w-[80%] pt-[3vw] sm:pt-[1.6vw] md:pt-[4vh] md:me-[1vw] text-[2.5vw] sm:text-[1.4vw] md:text-[1vw]">
+            <p className="w-[75%] sm:w-[80%] pt-[2vw] sm:pt-[1.6vw] md:pt-[4vh] md:me-[1vw] text-[2vw] sm:text-[1.4vw] md:text-[1vw]">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </p>
-            <div className="w-[100%] flex items-center justify-between text-[3vw] sm:text-[1.1vw] md:text-[.9vw] mt-[7vw] sm:mt-[1.4vw] md:mt-[3vh] p-[3vw] sm:p-[1vw]">
+            <div className="w-[100%] flex items-center justify-between text-[3vw] sm:text-[1.1vw] md:text-[.9vw] mt-[2vw] sm:mt-[1.4vw] md:mt-[3vh] p-[3vw] sm:p-[1vw]">
               <a href="#" className="float-left">
                 Visit Main Link
               </a>
@@ -315,18 +315,18 @@ const SectionThree = () => {
             alt="project six"
           />
           <div className="overlay opacity-0 text-white flex flex-col items-end text-[.6vw]">
-            <span className="mt-[6vw] sm:mt-[3vw] md:mt-[4vh] font-bold text-[4vw] sm:text-[1.4vw] md:text-[1vw] pe-[3vw] sm:pe-[1.4vw] md:pe-[2.5vw]">
+            <span className="mt-[4vw] sm:mt-[3vw] md:mt-[4vh] font-bold text-[3.5vw] sm:text-[1.4vw] md:text-[1vw] pe-[3vw] sm:pe-[1.4vw] md:pe-[2.5vw]">
               Printing Media
             </span>
             <p className="pe-[1vw] text-green-400 text-[2.5vw] sm:text-[.9vw] md:text-[.7vw]">
               Short Detail Here
             </p>
-            <p className="w-[70%] sm:w-[85%] md:w-[75%] pt-[4vw] sm:pt-[1vw] md:pt-[3vh] ms-0 md:ms-[1vw] text-[2.6vw] sm:text-[.7vw]">
+            <p className="w-[70%] sm:w-[85%] md:w-[75%] pt-[2vw] sm:pt-[1vw] md:pt-[3vh] ms-0 md:ms-[1vw] text-[2vw] sm:text-[.7vw]">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </p>
-            <div className="w-[100%] flex items-center justify-between text-[3vw] sm:text-[.7vw] md:mt-[2vh] p-[3vw] mt-[4vw] sm:mt-0 sm:p-[1vw]">
+            <div className="w-[100%] flex items-center justify-between text-[3vw] sm:text-[.7vw] md:mt-[2vh] p-[3vw] mt-[2vw] sm:mt-0 sm:p-[1vw]">
               <a href="#" className="float-left">
                 Visit Main Link
               </a>

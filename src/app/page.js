@@ -27,7 +27,7 @@ export default function Home() {
       {
         isLoaded ? (
           // loader
-          <div className="w-full h-[75vh] md:h-screen bg-blue-950 flex items-center justify-center">
+          <div className="w-full min-h-screen bg-blue-950 flex items-center justify-center">
             <h1 className="text-white text-3xl font-bold animate-pulse">Loading...</h1>
           </div>
         ) : (

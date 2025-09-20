@@ -84,14 +84,14 @@ const Header = () => {
   return (
     <div
       ref={headerRef}
-      className="absolute top-0 right-0 w-[95vw] md:w-[85vw] h-12 p-4 md:h-16 bg-white float-end md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 mt-3 md:mt-10 rounded-tl-xl rounded-bl-xl md:rounded-xl flex items-center justify-between z-50"
+      className="absolute top-0 right-0 w-[95vw] md:w-[85vw] h-12 p-4 md:h-16 bg-white float-end md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 mt-3 md:mt-10 rounded-tl-xl rounded-bl-xl md:rounded-xl flex items-center justify-between z-1000"
     >
       {/* Mobile Menu Toggle */}
       <div className="block md:hidden cursor-pointer" onClick={toggleMenu}>
         <img className="w-5" src="/img/hamburger.png" alt="Menu" />
         <div
             ref={menuRef}
-            className="absolute top-15 left-0 bg-white z-[999] w-[40vw] sm:w-[30vw] sm:left-[-3%] h-[35vh] sm:h-[45vh] shadow-xl"
+            className="absolute top-14 left-0 bg-white z-[999] w-[40vw] sm:w-[30vw] sm:left-[-3%] h-[47vh] sm:h-[45vh] shadow-xl"
             style={{ transform: "translateX(-100%)", opacity: 0 }}
           >
 

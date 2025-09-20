@@ -189,13 +189,13 @@ html {
   opacity: 1;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 650px) {
   
   .project-one:hover .overlay, .project-two:hover .overlay, 
   .project-three:hover .overlay, .project-four:hover .overlay, 
   .project-five:hover .overlay, .project-six:hover .overlay {
-    width: 80%;   /* cover right half */
-    height: 90%; /* full height */
+    width: 70%;   /* cover right half */
+    height: 92%; /* full height */
   }
 
 }

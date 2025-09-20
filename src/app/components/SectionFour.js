@@ -57,7 +57,7 @@ const SectionFour = () => {
 
     // 3. return statement/jsx
     return(
-        <div ref={containerRef} className="w-full h-[34vh] sm:h-[50vh] md:h-[90vh] bg-[#EEEEEE] overflow-hidden relative">
+        <div ref={containerRef} className="w-full h-[42vh] sm:h-[50vh] md:h-[90vh] bg-[#EEEEEE] overflow-hidden relative">
             
             {/* Right Circle */}
             <div className='w-[25vw] h-[25vw] rounded-full bg-[#B7D2EF] absolute top-[-8vw] right-[-10vw] p-[.1vw]'>
@@ -75,7 +75,7 @@ const SectionFour = () => {
                 <p ref={h2Ref} className="text-titghter text-center font-semibold text-[#444444] p-5 sm:-0 text-[3.4vw] sm:text-[2vw] md:text-[1.4vw] pt-3">We are ready to uplift your brand like many others in the past!</p>
             </div>
 
-            <div className="w-[75%] mx-auto mt-[2vw] sm:mt-[8vw] md:mt-[5vw] overflow-hidden">
+            <div className="w-[75%] mx-auto mt-[0vw] sm:mt-[8vw] md:mt-[5vw] overflow-hidden">
                 {/* animate-slide */}
                 <div className='w-full h-[30vw] sm:h-[14vw] md:h-[12vw] flex items-center'>
                     <div className="flex items-center gap-5 w-max animate-slide">
